@@ -1,0 +1,35 @@
+.active{
+  color: #43cb43;
+}
+.product{
+  
+  overflow: hidden;
+ 
+  transition: 0.5s;
+  border-radius: 20px;
+  
+  margin: 10px;
+}
+.product:hover{
+  box-shadow: #43cb43 0px 5px 15px;
+ 
+}
+.product button{
+  background-color: #43cb43;
+  opacity: 0;
+  transition: 0.5s;
+  transform: translateY(100%);
+}
+.product:hover button{
+  opacity: 1;
+  transform: translateY(0%);
+}
+.brand:hover{
+  box-shadow: #43cb43 0px 5px 15px;
+}
+@media (max-width: 640px) { /* Tailwind's small breakpoint is max-width 640px */
+  .product button {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
